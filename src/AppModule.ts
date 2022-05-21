@@ -16,6 +16,8 @@ import MemberService from './MemberService';
       password: '',
       entities: [MemberEntity],
       synchronize: true,
+      logger: 'advanced-console',
+      logging: true,
     }),
     TypeOrmModule.forFeature([MemberRepository]),
   ],
